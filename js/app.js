@@ -3,12 +3,17 @@
 // Welcome popup
 alert("Welcome! Let's play a game.");
 // Variable setup
+var userName;
 var qAttemptsCounter = 0;
 var qAttemptLimit = 4;
 var qScore = 0;
 var qValidAns = false;
 var qSixAnsArry = ['karate', 'Taikwando'];
 var qSevenTargetNumber = 450;
+
+// User details
+userName = prompt('Let\'s start with your name please.');
+
 // Question one
 do{
   var qOneAns = prompt('Do you think this is my first experiance coding? Please answer with a yes/no or y/n').toLowerCase();
@@ -31,9 +36,10 @@ do{
   }
 } while(qAttemptsCounter < qAttemptLimit && qValidAns === false);
 console.log('Current score: ' + qScore);
-console.log('Question attempts: ' + qAttemptsCounter);
 
 // Question two
+//Reset flags and counters
+qValidAns = false;
 qAttemptsCounter = 0;
 do{
   var qTwoAns = prompt('Do you think I am a coffee drinker? Please answer with a yes/no or y/n').toLowerCase();
@@ -56,9 +62,10 @@ do{
   }
 } while(qAttemptsCounter < qAttemptLimit && qValidAns === false);
 console.log('Current score: ' + qScore);
-console.log('Question attempts: ' + qAttemptsCounter);
 
 // Question three
+//Reset flags and counters
+qValidAns = false;
 qAttemptsCounter = 0;
 do{
   var qThreeAns = prompt('Do I drive to Code Fellows? Please answer with a yes/no or y/n').toLowerCase();
@@ -81,9 +88,10 @@ do{
   }
 } while(qAttemptsCounter < qAttemptLimit && qValidAns === false);
 console.log('Current score: ' + qScore);
-console.log('Question attempts: ' + qAttemptsCounter);
 
 // Question Four
+//Reset flags and counters
+qValidAns = false;
 qAttemptsCounter = 0;
 do{
   var qFourAns = prompt('Do I have pets? Please answer with a yes/no or y/n').toLowerCase();
@@ -107,9 +115,10 @@ do{
   }
 } while(qAttemptsCounter < qAttemptLimit && qValidAns === false);
 console.log('Current score: ' + qScore);
-console.log('Question attempts: ' + qAttemptsCounter);
 
 // Question FIve
+//Reset flags and counters
+qValidAns = false;
 qAttemptsCounter = 0;
 do{
   var qFiveAns = prompt('Is mint chip the best flavor of ice cream? Please answer with a yes/no or y/n').toLowerCase();
@@ -132,9 +141,10 @@ do{
   }
 } while(qAttemptsCounter < qAttemptLimit && qValidAns === false);
 console.log('Current score: ' + qScore);
-console.log('Question attempts: ' + qAttemptsCounter);
 
 // Question Six
+//Reset flags and counters
+qValidAns = false;
 qAttemptsCounter = 0;
 do{
   var qSixAns = prompt('In my intro I mentioned i earned 2 distinct black belts. Can you guess what basic styles they are in?').toLowerCase();
@@ -147,16 +157,17 @@ do{
   } else {
     alert('Nope. Try again!');
     qAttemptsCounter++;
-    console.log('Question attempts: ' + qAttemptsCounter);
+    console.log('Question attempts inside 6: ' + qAttemptsCounter);
     if(qAttemptsCounter >= qAttemptLimit){
       alert('OK. Let\'s more on then.');
     }
   }
 } while(qAttemptsCounter < qAttemptLimit && qValidAns === false);
 console.log('Current score: ' + qScore);
-console.log('Question attempts: ' + qAttemptsCounter);
 
 // Question Seven
+//Reset flags and counters
+qValidAns = false;
 qAttemptsCounter = 0;
 do{
   var qSevenAns = parseInt(prompt('I mentioned my love for game design. Can you guess how many steam games I own? (Hint it\'s a 3 digit number that is also a multiple of 10!)'));
@@ -180,4 +191,6 @@ do{
   }
 } while(qAttemptsCounter < qAttemptLimit && qValidAns === false);
 console.log('Current score: ' + qScore);
-console.log('Question attempts: ' + qAttemptsCounter);
+
+// Give score response
+alert('All done ' + userName + '. You got ' + qScore + ' out of 7!');
