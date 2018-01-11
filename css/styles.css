@@ -1,9 +1,28 @@
-h1{
+body{
+  width: 90%;
+  margin: 0 auto;
+  background-color: rgb(48, 48, 48);
+}
+
+#content {
+  overflow: auto;
+}
+
+header {
   background-color: rgb(69, 129, 69);
   font-size: 200%;
   color: azure;
+  text-align: center;
 }
-body{
-  background-color: rgb(48, 48, 48);
-  color: azure;
+
+.guessingGame {
+  width: 50%;
+  background-color: azure;
+  border: 2px solid black;
+}
+
+.topTenVideoGames {
+  width: 25%;
+  background-color: azure;
+  border: 2px solid black;
 }
