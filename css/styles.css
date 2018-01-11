@@ -2,6 +2,7 @@ body{
   width: 90%;
   margin: 0 auto;
   background-color: rgb(48, 48, 48);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #content {
@@ -15,14 +16,30 @@ header {
   text-align: center;
 }
 
+li {
+  display: list-item;
+}
+
+h2 {
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+
 .guessingGame {
-  width: 50%;
+  margin: 1%;
+  padding: 2%;
   background-color: azure;
   border: 2px solid black;
 }
 
-.topTenVideoGames {
-  width: 25%;
+.topTenVideoGames, .topFoods {
+  width: 33.3%;
+  float: left;
+  margin: 1%;
   background-color: azure;
   border: 2px solid black;
+}
+
+.topTenVideoGames h3, .topFoods h3 {
+  text-align: center;
 }
