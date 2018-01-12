@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // Welcome popup
 alert("Welcome! Let's play a game.");
@@ -15,6 +15,7 @@ var qSevenTargetNumber = 450;
 userName = prompt('Let\'s start with your name please.');
 
 // Question one
+function Question1() {
 do{
   var qOneAns = prompt('Do you think this is my first experiance coding? Please answer with a yes/no or y/n').toLowerCase();
   console.log('q 1 ans: '+qOneAns);
@@ -31,13 +32,15 @@ do{
     qAttemptsCounter++;
     console.log('Question attempts: ' + qAttemptsCounter);
     if(qAttemptsCounter >= qAttemptLimit){
-      alert('OK. Let\'s more on then.');
+      alert('OK. Let\'s move on then.');
     }
   }
 } while(qAttemptsCounter < qAttemptLimit && qValidAns === false);
 console.log('Current score: ' + qScore);
-
+}
+Question1();
 // Question two
+function Question2() {
 //Reset flags and counters
 qValidAns = false;
 qAttemptsCounter = 0;
@@ -46,7 +49,7 @@ do{
   console.log('q 2 ans: '+qTwoAns);
   // Answer check and reply
   if(qTwoAns === 'yes' || qTwoAns ==='y'){
-    alert('Never. Can\'t stand the stuff. I\'ll go for a 5-hour Energy if a I need a pick me up.');
+    alert('Never. Can\'t stand the stuff. I\'ll go for a 5-hour Energy if  I need a pick me up.');
     qValidAns = true;
   } else if(qTwoAns === 'no' || qTwoAns ==='n') {
     alert('You got it! It can smell good but I\m not a fan of the taste.');
@@ -62,8 +65,10 @@ do{
   }
 } while(qAttemptsCounter < qAttemptLimit && qValidAns === false);
 console.log('Current score: ' + qScore);
-
+}
+Question2();
 // Question three
+ function Question3(){
 //Reset flags and counters
 qValidAns = false;
 qAttemptsCounter = 0;
@@ -88,8 +93,10 @@ do{
   }
 } while(qAttemptsCounter < qAttemptLimit && qValidAns === false);
 console.log('Current score: ' + qScore);
-
+ }
+ Question3();
 // Question Four
+function Question4() {
 //Reset flags and counters
 qValidAns = false;
 qAttemptsCounter = 0;
@@ -115,8 +122,10 @@ do{
   }
 } while(qAttemptsCounter < qAttemptLimit && qValidAns === false);
 console.log('Current score: ' + qScore);
-
-// Question FIve
+}
+question4();
+// Question Five
+function Question5() {
 //Reset flags and counters
 qValidAns = false;
 qAttemptsCounter = 0;
@@ -141,8 +150,10 @@ do{
   }
 } while(qAttemptsCounter < qAttemptLimit && qValidAns === false);
 console.log('Current score: ' + qScore);
-
+}
+Question5();
 // Question Six
+function Question6() {
 //Reset flags and counters
 qValidAns = false;
 qAttemptsCounter = 0;
@@ -164,33 +175,36 @@ do{
   }
 } while(qAttemptsCounter < qAttemptLimit && qValidAns === false);
 console.log('Current score: ' + qScore);
-
+}
+Question6();
 // Question Seven
-//Reset flags and counters
-qValidAns = false;
-qAttemptsCounter = 0;
-do{
-  var qSevenAns = parseInt(prompt('I mentioned my love for game design. Can you guess how many steam games I own? (Hint it\'s a 3 digit number that is also a multiple of 10!)'));
-  console.log('q 7 ans: '+qSevenAns);
-  // Answer check and reply
-  if(qSevenAns === qSevenTargetNumber) {
-    alert(qSevenTargetNumber + ' is rigth! Good guess!');
-    qValidAns = true;
-    qScore++;
-  } else if(qSevenAns > qSevenTargetNumber) {
-    alert('Too high. Try Again');
-  } else if(qSevenAns < qSevenTargetNumber) {
-    alert('Too low! Try again!');
-  } else {
-    alert('Please be sure to enter an intiger number.');
-    qAttemptsCounter++;
-    console.log('Question attempts: ' + qAttemptsCounter);
-    if(qAttemptsCounter >= qAttemptLimit){
-      alert('OK. Let\'s more on then.');
+function Question7() {
+  //Reset flags and counters
+  qValidAns = false;
+  qAttemptsCounter = 0;
+  do{
+    var qSevenAns = parseInt(prompt('I mentioned my love for game design. Can you guess how many steam games do I own? (Hint it\'s a 3 digit number that is also a multiple of 10!)'));
+    console.log('q 7 ans: '+ qSevenAns);
+    // Answer check and reply
+    if(qSevenAns === qSevenTargetNumber) {
+      alert(qSevenTargetNumber + ' is right! Good guess!');
+      qValidAns = true;
+      qScore++;
+    } else if(qSevenAns > qSevenTargetNumber) {
+      alert('Too high. Try Again');
+    } else if(qSevenAns < qSevenTargetNumber) {
+      alert('Too low! Try again!');
+    } else {
+      alert('Please be sure to enter an intiger number.');
+      qAttemptsCounter++;
+      console.log('Question attempts: ' + qAttemptsCounter);
+      if(qAttemptsCounter >= qAttemptLimit){
+        alert('OK. Let\'s more on then.');
+      }
     }
-  }
-} while(qAttemptsCounter < qAttemptLimit && qValidAns === false);
-console.log('Current score: ' + qScore);
-
+  } while(qAttemptsCounter < qAttemptLimit && qValidAns === false);
+  console.log('Current score: ' + qScore);
+}
+Question7();
 // Give score response
 alert('All done ' + userName + '. You got ' + qScore + ' out of 7!');
