@@ -173,11 +173,11 @@ function questionSix() {
     } else {
       if(qAttemptsCounter < qAttemptLimit - 1){
         alert('Nope. Try again!');
-        qAttemptsCounter++;
         console.log('Question attempts: ' + qAttemptsCounter);
       } else {
         alert('OK. Let\'s more on then.');
       }
+      qAttemptsCounter++;
     }
   } while(qAttemptsCounter < qAttemptLimit && qValidAns === false);
   console.log('Current score: ' + qScore);
@@ -221,11 +221,11 @@ function scoreDisplay() {
 }
 
 // Call everything
-questionOne();
-questionTwo();
-questionThree();
-questionFour();
-questionFive();
+// questionOne();
+// questionTwo();
+// questionThree();
+// questionFour();
+// questionFive();
 questionSix();
 questionSeven();
 scoreDisplay();
