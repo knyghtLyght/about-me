@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // Welcome popup
 alert("Welcome! Let's play a game.");
@@ -15,20 +15,20 @@ var qSevenTargetNumber = 450;
 userName = prompt('Let\'s start with your name please.');
 
 // Question one
-function QuestionOne() {
+function questionOne() {
   do{
     var qOneAns = prompt('Do you think this is my first experiance coding? Please answer with a yes/no or y/n').toLowerCase();
     console.log('q 1 ans: ' + qOneAns);
     // Answer check and reply
-    if(qOneAns === 'yes' || qOneAns ==='y'){
+    if(qOneAns === 'yes' || qOneAns === 'y'){
       alert('Nope. I\'ve been playing with c# for a while but this will be my first professional attempt');
       qValidAns = true;
-    } else if(qOneAns === 'no' || qOneAns ==='n') {
+    } else if(qOneAns === 'no' || qOneAns === 'n') {
       alert('Good Guess! I\'ve been playing with c# as a hobby');
       qValidAns = true;
       qScore++;
     } else {
-      if(qAttemptsCounter < qAttemptLimit-1){
+      if(qAttemptsCounter < qAttemptLimit - 1){
         alert('I\'m sorry please answer with a yes/y or no/n');
         qAttemptsCounter++;
         console.log('Question attempts: ' + qAttemptsCounter);
@@ -41,7 +41,7 @@ function QuestionOne() {
 }
 
 // Question two
-function QuestionTwo() {
+function questionTwo() {
   // Reset flags and counters
   qValidAns = false;
   qAttemptsCounter = 0;
@@ -49,15 +49,15 @@ function QuestionTwo() {
     var qTwoAns = prompt('Do you think I am a coffee drinker? Please answer with a yes/no or y/n').toLowerCase();
     console.log('q 2 ans: ' + qTwoAns);
     // Answer check and reply
-    if(qTwoAns === 'yes' || qTwoAns ==='y'){
+    if(qTwoAns === 'yes' || qTwoAns === 'y'){
       alert('Never. Can\'t stand the stuff. I\'ll go for a 5-hour Energy if a I need a pick me up.');
       qValidAns = true;
-    } else if(qTwoAns === 'no' || qTwoAns ==='n') {
-      alert('You got it! It can smell good but I\m not a fan of the taste.');
+    } else if(qTwoAns === 'no' || qTwoAns === 'n') {
+      alert('You got it! It can smell good but I\'m not a fan of the taste.');
       qValidAns = true;
       qScore++;
     } else {
-      if(qAttemptsCounter < qAttemptLimit-1){
+      if(qAttemptsCounter < qAttemptLimit - 1){
         alert('I\'m sorry please answer with a yes/y or no/n');
         qAttemptsCounter++;
         console.log('Question attempts: ' + qAttemptsCounter);
@@ -70,7 +70,7 @@ function QuestionTwo() {
 }
 
 // Question three
-function QuestionThree() {
+function questionThree() {
   //Reset flags and counters
   qValidAns = false;
   qAttemptsCounter = 0;
@@ -78,15 +78,15 @@ function QuestionThree() {
     var qThreeAns = prompt('Do I drive to Code Fellows? Please answer with a yes/no or y/n').toLowerCase();
     console.log('q 3 ans: ' + qThreeAns);
     // Answer check and reply
-    if(qThreeAns === 'yes' || qThreeAns ==='y'){
+    if(qThreeAns === 'yes' || qThreeAns === 'y'){
       alert('Correct. I live on the eastside so I need to fight traffic to get here.');
       qValidAns = true;
       qScore++;
-    } else if(qThreeAns === 'no' || qThreeAns ==='n') {
+    } else if(qThreeAns === 'no' || qThreeAns === 'n') {
       alert('Saddly I do drive. My Leaf makes it a bearable though');
       qValidAns = true;
     } else {
-      if(qAttemptsCounter < qAttemptLimit-1){
+      if(qAttemptsCounter < qAttemptLimit - 1){
         alert('I\'m sorry please answer with a yes/y or no/n');
         qAttemptsCounter++;
         console.log('Question attempts: ' + qAttemptsCounter);
@@ -99,7 +99,7 @@ function QuestionThree() {
 }
 
 // Question Four
-function QuestionFour() {
+function questionFour() {
   //Reset flags and counters
   qValidAns = false;
   qAttemptsCounter = 0;
@@ -107,16 +107,16 @@ function QuestionFour() {
     var qFourAns = prompt('Do I have pets? Please answer with a yes/no or y/n').toLowerCase();
     console.log('q 4 ans: ' + qFourAns);
     // Answer check and reply
-    if(qFourAns === 'yes' || qFourAns ==='y'){
+    if(qFourAns === 'yes' || qFourAns === 'y'){
       alert('My roomates haev a dog. That counts right?');
       qValidAns = true;
       qScore++;
-    } else if(qFourAns === 'no' || qFourAns ==='n') {
+    } else if(qFourAns === 'no' || qFourAns === 'n') {
       alert('Technically correct but my roomates dog might disagree.');
       qValidAns = true;
       qScore++;
     } else {
-      if(qAttemptsCounter < qAttemptLimit-1){
+      if(qAttemptsCounter < qAttemptLimit - 1){
         alert('I\'m sorry please answer with a yes/y or no/n');
         qAttemptsCounter++;
         console.log('Question attempts: ' + qAttemptsCounter);
@@ -129,7 +129,7 @@ function QuestionFour() {
 }
 
 // Question FIve
-function QuestionFive() {
+function questionFive() {
   //Reset flags and counters
   qValidAns = false;
   qAttemptsCounter = 0;
@@ -137,15 +137,15 @@ function QuestionFive() {
     var qFiveAns = prompt('Is mint chip the best flavor of ice cream? Please answer with a yes/no or y/n').toLowerCase();
     console.log('q 5 ans: ' + qFiveAns);
     // Answer check and reply
-    if(qFiveAns === 'yes' || qFiveAns ==='y'){
+    if(qFiveAns === 'yes' || qFiveAns === 'y'){
       alert('Correct. By far the best!');
       qValidAns = true;
       qScore++;
-    } else if(qFiveAns === 'no' || qFiveAns ==='n') {
+    } else if(qFiveAns === 'no' || qFiveAns === 'n') {
       alert('Wrong. Nothing beats mint chip.');
       qValidAns = true;
     } else {
-      if(qAttemptsCounter < qAttemptLimit-1){
+      if(qAttemptsCounter < qAttemptLimit - 1){
         alert('I\'m sorry please answer with a yes/y or no/n');
         qAttemptsCounter++;
         console.log('Question attempts: ' + qAttemptsCounter);
@@ -158,7 +158,7 @@ function QuestionFive() {
 }
 
 // Question Six
-function QuestionSix() {
+function questionSix() {
   //Reset flags and counters
   qValidAns = false;
   qAttemptsCounter = 0;
@@ -171,7 +171,7 @@ function QuestionSix() {
       qValidAns = true;
       qScore++;
     } else {
-      if(qAttemptsCounter < qAttemptLimit-1){
+      if(qAttemptsCounter < qAttemptLimit - 1){
         alert('Nope. Try again!');
         qAttemptsCounter++;
         console.log('Question attempts: ' + qAttemptsCounter);
@@ -184,7 +184,7 @@ function QuestionSix() {
 }
 
 // Question Seven
-function QuestionSeven() {
+function questionSeven() {
   //Reset flags and counters
   qValidAns = false;
   qAttemptsCounter = -2;
@@ -203,7 +203,7 @@ function QuestionSeven() {
       alert('Too low! Try again!');
       qAttemptsCounter++;
     } else {
-      if(qAttemptsCounter < qAttemptLimit-1){
+      if(qAttemptsCounter < qAttemptLimit - 1){
         alert('Please be sure to enter an intiger number');
         qAttemptsCounter++;
         console.log('Question attempts: ' + qAttemptsCounter);
@@ -216,16 +216,16 @@ function QuestionSeven() {
 }
 
 // Give score response
-function ScoreDisplay() {
-alert('All done ' + userName + '. You got ' + qScore + ' out of 7!');
+function scoreDisplay() {
+  alert('All done ' + userName + '. You got ' + qScore + ' out of 7!');
 }
 
 // Call everything
-QuestionOne();
-QuestionTwo();
-QuestionThree();
-QuestionFour();
-QuestionFive();
-QuestionSix();
-QuestionSeven();
-ScoreDisplay();
+questionOne();
+questionTwo();
+questionThree();
+questionFour();
+questionFive();
+questionSix();
+questionSeven();
+scoreDisplay();

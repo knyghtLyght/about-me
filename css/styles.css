@@ -1,3 +1,9 @@
+/* color pallet
+navy blue: 18121E
+Gunmetal: 233237
+Rusty red: 984B43
+Warm Yellow: EAC67A */
+
 body{
   width: 90%;
   margin: 0 auto;
@@ -16,8 +22,12 @@ header {
   text-align: center;
 }
 
-li {
-  display: list-item;
+ol {
+  display: block;
+  list-style-type: disc;
+  padding-left: 20px;
+  list-style-position: inside;
+  font-size: 20px;
 }
 
 h2 {
