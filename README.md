@@ -1,2 +1,7 @@
 # about-me
-week one about me project
+About me project
+Author: Kevin Farrow
+
+### Pair programming partners:
+ - Hollie Thomas
+    - lab day 4, Function wrapping.
