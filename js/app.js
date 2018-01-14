@@ -1,7 +1,7 @@
 'use strict';
 
 // Welcome popup
-alert("Welcome! Let's play a game.");
+alert('Welcome! Let\'s play a game.');
 // Variable setup
 var userName;
 var qAttemptsCounter = 0;
@@ -221,11 +221,11 @@ function scoreDisplay() {
 }
 
 // Call everything
-// questionOne();
-// questionTwo();
-// questionThree();
-// questionFour();
-// questionFive();
+questionOne();
+questionTwo();
+questionThree();
+questionFour();
+questionFive();
 questionSix();
 questionSeven();
 scoreDisplay();
