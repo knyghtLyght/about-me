@@ -1,7 +1,5 @@
 'use strict';
 
-// Welcome popup
-alert('Welcome! Let\'s play a game.');
 // Variable setup
 var userName;
 var qAttemptsCounter = 0;
@@ -11,8 +9,11 @@ var qValidAns = false;
 var qSixAnsArry = ['karate', 'taekwondo'];
 var qSevenTargetNumber = 450;
 
-// User details
-userName = prompt('Let\'s start with your name please.');
+// Welcome popup
+function welcomeFunction() {
+  alert('Welcome! Let\'s play a game.');
+  userName = prompt('Let\'s start with your name please.');
+}
 
 // Question one
 function questionOne() {
@@ -221,6 +222,7 @@ function scoreDisplay() {
 }
 
 // Call everything
+welcomeFunction();
 questionOne();
 questionTwo();
 questionThree();

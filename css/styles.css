@@ -7,7 +7,7 @@ Warm Yellow: EAC67A */
 body{
   width: 90%;
   margin: 0 auto;
-  background-color: rgb(48, 48, 48);
+  background-color:rgb(6, 7, 6);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -16,13 +16,21 @@ body{
 }
 
 header {
-  background-color: rgb(69, 129, 69);
+  background-color: #232837a6;
   font-size: 200%;
   color: azure;
   text-align: center;
 }
 
 ol {
+  display: block;
+  list-style-type: decimal;
+  padding-left: 20px;
+  list-style-position: inside;
+  font-size: 20px;
+}
+
+ul {
   display: block;
   list-style-type: disc;
   padding-left: 20px;
@@ -33,23 +41,46 @@ ol {
 h2 {
   text-align: center;
   border-bottom: 2px solid black;
+  font-size: 200%;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-size: 120%;
+  margin: 10px 0;
+}
+
+p {
+  margin-left: 5px;
+}
+
+.ninja {
+  object-fit: fill;
 }
 
 .guessingGame {
   margin: 1%;
   padding: 2%;
-  background-color: azure;
+  background-color: #232837a6;
   border: 2px solid black;
+  color: azure;
 }
 
 .topTenVideoGames, .topFoods {
-  width: 33.3%;
+  padding-bottom: 10px;
+}
+
+.topTenVideoGames, .topFoods, .picture{
+  width: 31%;
   float: left;
   margin: 1%;
-  background-color: azure;
+  background-color: #232837a6;
   border: 2px solid black;
+  color: azure;
 }
 
 .topTenVideoGames h3, .topFoods h3 {
   text-align: center;
+  margin: 10px 0;
+  font-size: 120%;
 }
